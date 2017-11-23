@@ -93,7 +93,15 @@ $redis->connect('127.0.0.1', 6379);
        $val=$redis->hGet('student','name');//取出对应某个信息，返回legend
 组合二、$val=$redis->hMGet('student',array('name','age'));//以数组形式返回name和age的信息
 ```
-(6)、释放redis
+(6)、删除某个操作的值
+```
+$redis->delete('test');
+```
+(7)、判断是否存在
+```php
+$redis->exists('test')//返回布尔值
+```
+(8)、释放redis
 ```php
 $redis->close();
 ```
