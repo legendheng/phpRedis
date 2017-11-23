@@ -91,3 +91,7 @@ $redis->connect('127.0.0.1', 6379);
        $val=$redis->hGet('student','name');//取出对应某个信息，返回legend
 组合二、$val=$redis->hMGet('student',array('name','age'));//以数组形式返回name和age的信息
 ```
+(6)、释放redis
+```php
+$redis->close();
+```
