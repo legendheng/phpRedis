@@ -101,7 +101,11 @@ $redis->delete('test');
 ```php
 $redis->exists('test')//返回布尔值
 ```
-(8)、释放redis
+(8)、清空整个Redis服务器的数据
+```php
+$redis->flushAll()//返回布尔值
+```
+(9)、释放redis
 ```php
 $redis->close();
 ```
